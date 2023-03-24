@@ -68,32 +68,21 @@
 			const Content = () => {
 				return (
 					<div className="container mx-auto p-2">
-						<Students />
-						<Instructors />
+						<List emoji="🧑‍🎓" title="Students" data={students} />
+						<List emoji="🧑‍🏫" title="Instructors" data={instructors} />
 					</div>
 				)
 			}
 
-			const Students = () => {
+			const List = ({ title, emoji, data }) => {
 				return (
 					<>
-						<h3 className="font-bold text-lg">🧑‍🎓 Students</h3>
+						<h3 className="font-bold text-lg">
+							{emoji} {title}
+						</h3>
 						<ul className="pl-8 border-slate-800 border-l my-2 ml-2.5">
-							{students.map((student) => (
+							{data.map((student) => (
 								<li className="text-slate-400">{student}</li>
-							))}
-						</ul>
-					</>
-				)
-			}
-
-			const Instructors = () => {
-				return (
-					<>
-						<h3 className="font-bold text-lg">🧑‍🏫 Instructors</h3>
-						<ul className="pl-8 border-slate-800 border-l my-2 ml-2.5">
-							{instructors.map((instructor) => (
-								<li className="text-slate-400">{instructor}</li>
 							))}
 						</ul>
 					</>
