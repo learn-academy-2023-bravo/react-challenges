@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head> 
+    
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (<>
+        <h1> LEARN BRAVO 2023</h1>
+            <Students />
+            <Footer />
+        </>
+        )
+      }
+      const Students = () => {
+        return (
+        <ul>
+            <li>Brandon</li>
+            <li>Mark</li>
+            <li>Nikki</li>
+            <li>Borja</li>
+            <li>Jake</li>
+            <li>Dre</li>
+            <li>Felix</li>
+            <li>Sam</li>
+            <li>Wags</li>
+            <li>Raymond</li>
+            <li>Elmer</li>
+            <li>Valeria</li>
+            <li>Apple</li>
+            <li>Evelyn</li>
+            <li>Eddie</li>
+            <li>Nguyen</li>
+            <li>Jose</li>
+            <li>Spencer</li>
+            <li>DeMario</li>
+            </ul>)
+      }
+
+      const Footer = () => {
+        (
+            <h1>Brandon Johnwell </h1>
+        )
+      }
+    
+    
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+  
+</html>
