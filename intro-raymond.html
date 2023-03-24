@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<script
+			src="https://unpkg.com/react@18/umd/react.development.js"
+			crossorigin
+		></script>
+		<script
+			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+			crossorigin
+		></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<title>Intro to React</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-slate-900 text-slate-100">
+		<div id="react-container"></div>
+
+		<script type="text/babel">
+			const students = [
+				'Brandon',
+				'Evelyn',
+				'Greg',
+				'Eddie',
+				'Mark',
+				'Raymond',
+				'Nguyen',
+				'Apolonio',
+				'Spencer',
+				'Elmer',
+				'Valeria',
+				'DeMario',
+				'Jose',
+				'Felix',
+				'James',
+				'Wags',
+				'Sam',
+				'Borja',
+				'Nikki',
+				'Dre',
+				'Jake',
+			]
+
+			const App = () => {
+				return (
+					<>
+						<Header />
+						<Content />
+						<Footer />
+					</>
+				)
+			}
+
+			const Header = () => {
+				return (
+					<header>
+						<h1 className="text-lg font-bold">Bravo2023</h1>
+					</header>
+				)
+			}
+
+			const Content = () => {
+				return (
+					<ul>
+						{students.map((student) => (
+							<li>{student}</li>
+						))}
+					</ul>
+				)
+			}
+
+			const Footer = () => {
+				return (
+					<footer>
+						<a href="https://raymondkneipp.com" target="_blank">
+							Raymond Kneipp
+						</a>
+					</footer>
+				)
+			}
+
+			const domContainer = document.querySelector('#react-container')
+			const root = ReactDOM.createRoot(domContainer)
+			root.render(<App />)
+		</script>
+	</body>
+</html>
