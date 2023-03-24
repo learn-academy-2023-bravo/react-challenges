@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return ( 
+         <>
+          <Header />
+          <ClassList />
+          <Footer />
+         </>
+        )
+      }
+
+      const Header = () => {
+        return (
+            <h1>BRAVO 2023</h1>
+        )
+      }
+
+      const ClassList = () => {
+        return (
+           <ul>
+            <li>Trish</li>
+            <li>Charlean</li>
+            <li>Gene</li>
+            <li>Jake</li>
+            <li>Dre</li>
+            <li>Nikki</li>
+            <li>Borja</li>
+            <li>Sam</li>
+            <li>Wags</li>
+            <li>James</li>
+            <li>Felix</li>
+            <li>Jose</li>
+            <li>DeMario</li>
+            <li>Valeria</li>
+            <li>Elmer</li>
+            <li>Spencer</li>
+            <li>Apolonio</li>
+            <li>Nguyen</li>
+            <li>Raymond</li>
+            <li>Mark</li>
+            <li>Eddie</li>
+            <li>Greg</li>
+            <li>Evelyn</li>
+            <li>Brandon</li>
+           </ul>
+        )
+      }
+
+      const Footer = () => {
+        return (
+            <footer>Mark Nou</footer>
+        )
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
