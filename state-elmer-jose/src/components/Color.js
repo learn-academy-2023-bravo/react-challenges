@@ -15,7 +15,8 @@ const Color = () => {
     "green",
     "blue",
     "purple",
-    "pink"
+    "pink",
+    "pink2"
     ]
 
     // custom function to draw random colors
