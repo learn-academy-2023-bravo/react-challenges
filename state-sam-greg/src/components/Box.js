@@ -3,6 +3,9 @@ import React, {useState} from "react"
 const Box = () => {
     const [box, setBox] = useState("White")
 
+
+    
+
     const moreColors = [
         "Black",
         "Orange",
@@ -14,6 +17,10 @@ const Box = () => {
         "Purple",
         "Red"
     ]
+
+   
+
+
 
     const handleBox = () => {
         const randomColor = Math.floor(Math.random() * moreColors.length)
