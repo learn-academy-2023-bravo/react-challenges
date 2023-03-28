@@ -1,0 +1,47 @@
+.container {
+  /* Use flexbox to center the child elements both horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Set the height of the container to 100% of the viewport height */
+  height: 100vh;
+  border: 10px;
+  position: relative;
+}
+
+.color-box {
+  /* Set the width and height of the color-box to 200 pixels */
+  width: 250px;
+  height: 250px;
+  /* Add rounded corners to the color-box using the border-radius property */
+  border-radius: 10px;
+  /* Set the cursor to pointer to indicate that the element is clickable */
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: var();
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+
+.color-name {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
