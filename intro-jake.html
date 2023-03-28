@@ -1,0 +1,85 @@
+<!-- The goal of the following challenge is for you to practice nesting components and getting familiar with the component syntax.
+
+Create a new HTML file. Copy the following code into your file: -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Killin' it in React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return( 
+            <>
+        <h1>&#128511;Bravo 2023&#128511;</h1>
+        <Teachers />
+        <Content />
+        <Footer />
+        </>
+        )
+      }
+      const Teachers = () =>{
+        return(
+         <>
+            <h2>Charlean the Queen!</h2>
+            <h2>Trish the Spectacular!</h2>
+         </>
+        )
+      }
+
+      const Content = () =>{
+        return(
+            <>
+            <ul>
+                <li>Apolonio</li>
+                <li>Borja</li>
+                <li>Brandon</li>
+                <li>Dre</li>
+                <li>DeMario</li>
+                <li>Eddie</li>
+                <li>Elmer</li>
+                <li>Evelyn</li>
+                <li>Felix</li>
+                <li>Greg</li>
+                <li>James</li>
+                <li>Jose</li>
+                <li>Mark</li>
+                <li>Nguyen</li>
+                <li>Raymond</li>
+                <li>Nikki</li>
+                <li>Spencer</li>
+                <li>Wags</li>    
+                </ul>
+            </>
+        )
+      }
+      const Footer = ()=> {
+        return(
+            <footer>Jake</footer>   
+        )
+      }
+
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+<!-- 📚 User Stories -->
+<!-- As a user, I see a Header component with the name of your cohort.
+As a user, I can see a Content component that contains an unordered list of all your classmates.
+As a user, I can see a Footer component with your name. -->
