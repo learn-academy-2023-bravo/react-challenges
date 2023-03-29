@@ -1,0 +1,16 @@
+.box {
+  border: 10px solid black;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.dicebox {
+  border: 5px solid black;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center 
+}
