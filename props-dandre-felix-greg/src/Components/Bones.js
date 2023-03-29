@@ -1,38 +1,22 @@
-import React, {useState}from 'react'
+import React from "react"
 
-const Bones = () => {
-  const [number, setNumber] = useState ("1")
-
-  const handleClick = () => {
-    const numbers = [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      
-    ]
-    const randomNumber = Math.floor(Math.random() * numbers.length)
-    setNumber(numbers[randomNumber])
-  
+const Bones = (props) => {
+  return (
+    <div
+      className="bone"
+      style={{
+        width: "400px",
+        height: "400px",
+        backgroundColor: "white",
+        border: "5px solid black",
+        textAlign: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1></h1>
+      <button onClick={props.handleClick}>Throw dat bone🦴</button>
+      <p>{props.number}</p>
+    </div>
+  )
 }
-return (
-  <div className ="bone"
-    style={{
-      width: "400px",
-      height: "400px",
-      backgroundColor: 'white',
-      border: "5px solid black",
-      textAlign: "center",
-        alignItems: "center"
-      
-    }}
-  >
-    <h1></h1>
-    <button onClick={handleClick}>Throw dat bone🦴</button>
-    <p>{number}</p>
-  </div>
-)
-}
-  export default Bones
+export default Bones
