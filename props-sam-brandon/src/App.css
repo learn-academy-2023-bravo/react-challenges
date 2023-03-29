@@ -1,0 +1,7 @@
+.DiceBox {
+  border: 5px black solid;
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  padding: 20px;
+}
