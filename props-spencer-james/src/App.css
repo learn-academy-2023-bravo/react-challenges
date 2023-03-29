@@ -1,0 +1,44 @@
+.background{
+    background-repeat: no-repeat;
+}
+
+
+
+.container{
+border: 3px solid black;
+height: 500px;
+width: 350px;
+padding: none;
+margin: auto;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
+.dice{
+padding:none;
+align-self: auto;
+}
+
+.diceButton{
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(27, 3, 60);
+    border: 1px;
+}
+
+#header{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
