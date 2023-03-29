@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, {useState} from 'react' 
 import "./App.css" 
 import Bones from "./Components/Bones"
 
@@ -9,13 +9,10 @@ const App = () => {
     <>
     
     <h1>Throwin' Bones 🦴</h1>
-  <div className='card'>
-    <div className='button'>
-        <button>Click to Roll Die</button>
+    <Bones />
+ 
 
-    </div>
-
-   </div> 
+   
     </>
   )
 }
