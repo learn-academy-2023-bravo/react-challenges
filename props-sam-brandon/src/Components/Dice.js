@@ -5,9 +5,9 @@ const Dice = (props) => {
     // Create a Div
     // Give a onClick, ran a function that generates a random number Math.random
     // State to update the visual
-    const rollDice = () => {
-        console.log( Math.floor(Math.random() * 6) + 1 )
-    }
+    // const rollDice = () => {
+    //     console.log( Math.floor(Math.random() * 6) + 1 )
+    // }
     // console.log(rollDice())
     
 
@@ -15,7 +15,9 @@ const Dice = (props) => {
         <>
             <div className="DiceBox">
                 {props.currentNum}
-                <button onClick={rollDice}>Roll Dice</button>
+                
+                
+                <button onClick={props.hand}>Roll Dice</button>
             </div>
         </>
     )
