@@ -1,0 +1,27 @@
+.dice-box1 {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  display: flex
+
+}
+
+.header {
+  text-align: center;
+}
+
+.roll-button {
+text-align: center;
+}
+
+.dice-number {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+
+}
