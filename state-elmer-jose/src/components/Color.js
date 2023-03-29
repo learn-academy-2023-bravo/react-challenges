@@ -9,7 +9,7 @@ const Color = () => {
 
     // array of collors
     const colorScheme = [
-    "red", 
+    "red" + "#ff0000", 
     "orange",
     "yellow",
     "green",
