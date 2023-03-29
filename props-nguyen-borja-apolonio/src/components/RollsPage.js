@@ -1,10 +1,17 @@
 import React from "react";
 
-const RollsPage = () => {
+const RollsPage = (props) => {
+
     return(
         <>
             <div className="Page">
                 <h1>Rolls</h1>
+                <h2>{props.rollResults}</h2>
+                <h2>{props.rollHistory}</h2>
+
+
+                
+
             </div>
         </>
     )

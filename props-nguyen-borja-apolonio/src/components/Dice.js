@@ -1,12 +1,15 @@
 import React from "react"
 
-const Dice = () => {
+const Dice = (props) => {
+
     return(
         <>
             <div className="Page">
                 <div className="dice">
-                    <h1>Dice</h1>
+                    <h1>{props.diceRoll}</h1>
+                    
                 </div>
+                <button onClick={props.triggerNextNumber}>Roll dice! </button>
             </div>
         </>
     )
