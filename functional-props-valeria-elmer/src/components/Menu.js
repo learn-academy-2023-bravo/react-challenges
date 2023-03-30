@@ -25,4 +25,4 @@ const Menu = ({ menuItems, addToOrder }) => {
 }
 
 // Export the Menu component as the default export
-export default Menu;
+export default Menu

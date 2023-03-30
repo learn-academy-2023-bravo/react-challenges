@@ -37,3 +37,8 @@ As a developer, you are tasked with creating a food ordering application in Reac
 - Display the total cost of the current order including sales tax.
 - Display the total cost rounded to two decimals.
 - Add images of the food selections to the menu items.
+
+### New Methods Used:
+
+- The .toFixed() method in JavaScript is used to format a number with a specified number of decimal places and returns a string. It can be useful for displaying currency or other numerical values with consistent formatting.
+- The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark ( ? ), then an expression to execute if the condition is truthy followed by a colon ( : ), and finally the expression to execute if the condition is falsy.
