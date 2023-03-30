@@ -1,15 +1,62 @@
-.Container {
+ @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+
+body {background-image: url("./assets/Restaurant.png");}
+
+.container { 
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #d8aa79;
+background: #33333387;
+text-shadow: 0 -1px 4px #921515, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px rgb(9, 0, 0);
+  text-align: center;
+}
+.menu-container {
+  background-color: #333333b9;
+  padding: 20px;
+  color: rgb(246, 91, 91);
+  font-family: 'Oxygen', sans-serif;
+}
+.order-container {
+  background-color: #333333cd;
+  padding: 20px;
+  color: rgb(246, 91, 91);
+  font-family: 'Oxygen', sans-serif;
+}
+.list{
   flex-direction: row;
 }
 
-.OrderContainer {
-  display: flex;
-  flex-flow: column wrap;
+.my-button {
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:6px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+}
+.my-button:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+.my-button:active {
+	position:relative;
+	top:1px;
 }
 
-.MenuContainer {
-  display: flex;
-  flex-direction: column;
+.video-responsive{
+  padding-top: 100px;
 }
+
