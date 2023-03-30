@@ -1,11 +1,11 @@
 import React from "react"
 
-const Menu = ( {menuItem} ) => {
+const Menu = ( {menuItem,orderFood,index} ) => {
     return (
         <>
-            <h1>Menu</h1>
+            
             <h2>{menuItem.name}</h2>
-            <button onClick={() => {orderFood}} >Order Food</button>
+            <button onClick={()=>{orderFood(index)}}>Order Food</button>
 
         </>
     )

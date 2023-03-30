@@ -10,6 +10,13 @@ const App = () => {
     {name: "Tequila",  price: "$15", order: false},
   ])
   
+  const [foodOrder, setFoodOrder] = useState ([])
+
+  const foodLog = (foodName) => {
+    menu[foodName].name
+    setFoodOrder([...menu])
+  }
+
   const orderFood = (foodOrdered) => {
     menu[foodOrdered].order = true
     setMenu([...menu])
@@ -18,14 +25,18 @@ const App = () => {
   return (
     <>
     <h1> Food Ordering App</h1>
+    <h1>Menu</h1>
     {menu.map((menuItem,index) => {
       return <Menu 
-              menu={menu} 
+              menuItem={menuItem} 
               key={index}
+              index={index}
               orderFood={orderFood} 
-            />
+            />   
     })}
-    <Orders />
+            <Orders 
+            foodName={foodName}
+            />
    
     </>
   )
