@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+  font-family:inherit;
+  text-shadow: 40px gray;
+  font-size:50px;
+}
+
+.App {
+  text-align: center;
+}
+
+.item-card {
+  border: 2px solid black;
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;  
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background: linear-gradient(-45deg, #ede242, #dd2c0d, #7f0b0b);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.order-summary {
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.order-price {
+  border: 2px solid black;
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+}
