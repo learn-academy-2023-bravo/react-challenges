@@ -4,12 +4,12 @@ import React, { useState } from 'react'
 // Import Menu and Order components
 import Menu from './components/Menu'
 import Order from './components/Order'
-import './App.css'
+// import './App.css'
 import hamburgerImage from './assets/hamburger.jpeg'
 import hotdogImage from './assets/hotdog.jpeg'
 import pizzzaImage from './assets/pizzza.jpeg'
 import saladImage from './assets/salad.jpeg'
-import menuImage from './assets/menu.jpeg'
+// import menuImage from './assets/menu.jpeg'
 
 
 
@@ -60,14 +60,14 @@ function App() {
   // Return JSX
   return (
     <div className="App"
-    style={{
-      backgroundImage: `url(${menuImage})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'repeat-y',
-      backgroundAttachment: 'fixed',
-      height: '150vh',
+//     style={{
+//       backgroundImage: `url(${menuImage})`,
+//       backgroundSize: 'cover',
+//       backgroundRepeat: 'repeat-y',
+//       backgroundAttachment: 'fixed',
+//       height: '150vh',
       
-    }}
+//     }}
     >
       {/* Render Menu component with menu items and addToOrder function */}
       <Menu menuItems={menuItems} addToOrder={addToOrder} />
