@@ -1,44 +1,45 @@
-
+import React, { useState } from 'react'
+import Menu from './components/Menu'
+import Order from './components/Order'
 
 const menuItems = [
   {
-    name: "hamburger",
+    name: "Hamburger",
     price: 4.56
-    
-  }
-  ,
+  },
   {
-    name: "pizza",
+    name: "Pizza",
     price: 1.34
-  }
-  ,
+  },
   {
     name: "Salad",
     price: 3.45
-  }
-  ,
+  },
   {
-    name: "hotdog",
+    name: "Hotdog",
     price: 2.65
   }
 ]
 
+function App() {
+  const [orderItems, setOrderItems] = useState([])
 
+  const addToOrder = (item) => {
+    setOrderItems([...orderItems, item])
+  }
 
-const App = () => {
-  // Render the following JSX code:
-  return(
-    <>
-      <h2>Menu</h2>
-      {menuItems.map((item) => (
-        <div key={item.name}>
-          <h3>{item.name}</h3>
-          <p>${item.price.toFixed(2)}</p>
-          <button>Add to Order</button>
-        </div>
-      ))}
-    </>
+  const removeFromOrder = (itemIndex) => {
+    const newOrderItems = [...orderItems]
+    newOrderItems.splice(itemIndex, 1)
+    setOrderItems(newOrderItems)
+  }
+
+  return (
+    <div className="App">
+      <Menu menuItems={menuItems} addToOrder={addToOrder} />
+      <Order orderItems={orderItems} removeFromOrder={removeFromOrder} />
+    </div>
   )
-}      
-    export default App
-  
+}
+
+export default App;
