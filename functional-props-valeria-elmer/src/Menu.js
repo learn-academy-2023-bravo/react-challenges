@@ -36,9 +36,11 @@ const Menu = () => {
         <div key={item.name}>
           <h3>{item.name}</h3>
           <p>${item.price.toFixed(2)}</p>
+          
           <button onClick={() => handleAddToOrder(item)}>
             {selectedItems.includes(item) ? 'Remove from Order' : 'Add to Order'}
           </button>
+
         </div>
       ))}
     </>

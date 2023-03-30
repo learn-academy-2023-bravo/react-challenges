@@ -4,24 +4,36 @@ import React, { useState } from 'react'
 // Import Menu and Order components
 import Menu from './components/Menu'
 import Order from './components/Order'
+import './App.css'
+import hamburgerImage from './assets/hamburger.jpeg'
+import hotdogImage from './assets/hotdog.jpeg'
+import pizzzaImage from './assets/pizzza.jpeg'
+import saladImage from './assets/salad.jpeg'
+import menuImage from './assets/menu.jpeg'
+
+
 
 // Define menu items with their name and price
 const menuItems = [
   {
     name: "Hamburger",
-    price: 4.56
+    price: 4.56,
+    image: hamburgerImage
   },
   {
     name: "Pizza",
-    price: 1.34
+    price: 1.34,
+    image: pizzzaImage
   },
   {
     name: "Salad",
-    price: 3.45
+    price: 3.45,
+    image: saladImage
   },
   {
     name: "Hotdog",
-    price: 2.65
+    price: 2.65,
+    image: hotdogImage
   }
 ]
 
@@ -47,7 +59,16 @@ function App() {
 
   // Return JSX
   return (
-    <div className="App">
+    <div className="App"
+    style={{
+      backgroundImage: `url(${menuImage})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'repeat-y',
+      backgroundAttachment: 'fixed',
+      height: '150vh',
+      
+    }}
+    >
       {/* Render Menu component with menu items and addToOrder function */}
       <Menu menuItems={menuItems} addToOrder={addToOrder} />
       {/* Render Order component with order items and removeFromOrder function */}
