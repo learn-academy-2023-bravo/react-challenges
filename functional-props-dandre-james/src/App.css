@@ -1,38 +1,12 @@
-.App {
-  text-align: center;
+.container {
+background-color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: medium;
+  color: whitesmoke;
+  border: dashed whitesmoke
+  /* background-image: url("https://files.slack.com/files-pri/T04B40L2C-F05127FGPRB/image.png") */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
