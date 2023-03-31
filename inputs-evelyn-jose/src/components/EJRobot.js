@@ -1,29 +1,24 @@
 import React, {useState} from "react"
 
 const EJRobot = () => {
-    const [userEJ, setUserEJ] = useState("")
+  const [userEJ, setUserEJ] = useState("")
 
-    const handleChangeEJ = (e) => {
+  const handleChangeEJ = (e) => {
       // console.log(e.target.value)
-      setUserEJ(e.target.value)
-    }
-
-    return (
-     <>
-       
+    setUserEJ(e.target.value)
+  }
+    return(
+      <>
+        <h3>EJ Robot</h3>
         <input 
           type="text" 
-          placeholder=""
+          placeholder="Modifying"
           value={userEJ}
           onChange={handleChangeEJ}
         />
-        <h3>EJ Robot</h3>
         <p>  🤖💬...Processing... {userEJ} ...BlaBlaBlaBla...</p>
-
-     </>
-
+      </>
     )
   }
   
   export default EJRobot
-  

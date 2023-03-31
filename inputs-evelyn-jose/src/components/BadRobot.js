@@ -1,29 +1,25 @@
 import React, {useState} from "react"
 
 const BadRobot = () => {
-    const [userBR, setUserBR] = useState("")
+  const [userBR, setUserBR] = useState("")
 
-    const handleChangeBR = (e) => {
-      // console.log(e.target.value)
-      setUserBR(e.target.value)
-    }
-
-    return (
-     <>
-        
+  const handleChangeBR = (e) => {
+  // console.log(e.target.value)
+    setUserBR(e.target.value)
+  }
+    return(
+      <>
+        <h3>Bad Robot</h3>
         <input 
           type="text" 
-          placeholder=""
+          placeholder="BlaBlaBla"
           value={userBR}
           onChange={handleChangeBR}
-        />
-        <h3>Bad Robot</h3>
-        <p>  🤖💬...Processing... {userBR} ...BlaBlaBlaBla...</p>
-
-     </>
-
+        />      
+        <p> 🤖💬...Processing...{userBR} ...BlaBlaBlaBla...
+        </p>
+      </>
     )
-  }
+}
   
   export default BadRobot
-  
