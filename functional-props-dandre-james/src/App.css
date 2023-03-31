@@ -1,0 +1,12 @@
+.container {
+background-color: blue;
+}
+
+.menu{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: medium;
+  color: whitesmoke;
+  border: dashed whitesmoke
+  /* background-image: url("https://files.slack.com/files-pri/T04B40L2C-F05127FGPRB/image.png") */
+}
+
