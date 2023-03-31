@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+            <>
+                <div>
+                    <h1>THE Bravo Cohort!</h1>
+                    
+                    <h2>Meet the Super Stars</h2>
+                </div>
+                <ClassMates />
+                <Footer />
+            </>
+        )
+      }
+
+      const ClassMates = () => {
+        return (
+            <ul>
+                <li>Apolonio</li>
+                <li>Brandon</li>
+                <li>DeMario</li>
+                <li>Dre</li>
+                <li>Elmer</li>
+                <li>Evelyn</li>
+                <li>Eddie</li>
+                <li>Felix</li>
+                <li>Greg</li>
+                <li>Jake</li>
+                <li>Mark</li>
+                <li>Nguyen</li>
+                <li>Nikki</li>
+                <li>Ray</li>
+                <li>Jose</li>
+                <li>Sam</li>
+                <li>Spencer</li>
+                <li>Valeria</li>
+                <li>Wags</li>
+                <li>And your's truly... X</li>
+            </ul>
+        )
+      }
+      const Footer = () => {
+        return (
+            <>
+                <h6> This public service announcement was brought to you by: Borja</h6>
+                <h5> Don't Worry. Be Happy</h5>
+            </>
+            )
+      }
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+
+<!-- 
+User Stories
+As a user, I see a Header component with the name of your cohort.
+As a user, I can see a Content component that contains an unordered list of all your classmates.
+As a user, I can see a Footer component with your name. -->

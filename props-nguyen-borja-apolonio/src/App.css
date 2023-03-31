@@ -1,0 +1,29 @@
+.Page {
+  border: 2px solid black;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
