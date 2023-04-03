@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.474);
+  color: white;
+}
+
+.robot {
+  padding: 2%;
+}
+
+p {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.474);
+  color: white;
+  margin: auto;
+}
+
+input {
+  margin: auto;
+  display: block;
+}
+
+body {
+  background: url(https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
