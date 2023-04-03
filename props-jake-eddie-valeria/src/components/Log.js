@@ -5,11 +5,8 @@ const Log = (props) => {
       return (
         <>
           <h1 className="log">{props.log}</h1>
-          
-          
         </>
-      )
-    
+      )   
     }
 
 export default Log

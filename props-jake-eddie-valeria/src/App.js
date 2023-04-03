@@ -3,7 +3,6 @@ import Die from "./components/Die"
 import Log from "./components/Log"
 import "./App.css"
 
-
 const App = () => {
   const [dice, setDice] = useState()
   const [log, setLog] = useState([])
