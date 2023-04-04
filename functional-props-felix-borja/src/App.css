@@ -1,0 +1,30 @@
+body{
+  background-image: url(https://cdn.ananasposter.ru/image/cachewebp/catalog/poster/pos22/4/51050-1000x830.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.headingSpace{
+  border:2px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.menuDisplay{
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menuItem{
+  border: 1px dotted black;
+  padding: 5px;
+  text-align: center;
+}
+
+.footerText{
+  padding: 20px;
+}
+
