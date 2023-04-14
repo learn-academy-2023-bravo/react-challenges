@@ -1,0 +1,26 @@
+/* box {
+    background: linear-gradient(
+          105deg,
+          rgba(234, 245, 255, 0.961) 39%,
+          rgb(227, 254, 255) 96%
+    background-repeat: no-repeat)
+    } */
+.BoxContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    flex:1
+    }
+.Container{
+    border-radius: 40px;
+    border-width: 40px;
+    border-color:50px solid black;
+    margin:0 auto;
+    max-width: 600 px; 
+    left: 10%;
+    background-color: rgba(250, 235, 215, 0.636)
+    
+  }
+
+
