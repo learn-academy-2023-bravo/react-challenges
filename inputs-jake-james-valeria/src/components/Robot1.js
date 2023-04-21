@@ -1,10 +1,9 @@
-import React, {useState} from "react"
+import React from "react"
 
-const Robot1 = () => {
-  const [response1, setResponse1] = useState("")
+const Robot1 = ({userInput}) => {
     return (
       <>
-       <h3>I hear you saying {useState}. Is that correct?</h3>
+       <h3>I hear you saying {userInput}. Is that correct?</h3>
     </>
     )
 

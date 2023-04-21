@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 
 const Robot3 = () => {
-  const [response3, setResponse3] = useState("")
+//   const [response3, setResponse3] = useState("")
     
 
 }

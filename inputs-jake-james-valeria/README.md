@@ -21,10 +21,36 @@ As a user, I see titles of three robots waiting for my text.
 
 
 As a user, I see my "Good Robot" repeating exactly what I type in real time.
+- need to store what the user is typing, using state variable called userInput
+- Reference the variable under the good title
 
+Pseudo:
+- create a function called handleChange
+- input: DOM event from the onChange attribute from the input tag
+- output: what the user types
 
 As a user, I see my "Bad Robot" saying "BLABLA....." One character for every character I type in real time.
+- check the pattern, every third index the letter repeats
+- index + 3
+- input:  A l o h a 
+- Output: B L A B L
+- index:  0 1 2 3 4
 
+- indexes for B: 0, 3
+- indexes for L: 1, 4
+- indexes for A: 2, 5
+
+Pseudo:
+- create a function called handleChange
+- input: DOM event from the onChange attribute from the input tag
+- output: replacing what the user types with "B" "L" or "A" 
+- for loop will provide numbers for us to reference the indexes
+- we will reassign the value at the index 
+for "B", userInput[i], userInput[i + 3]
+for "L", userInput[i + 1], userInput[i + 4]
+for "A", userInput[i + 2], userInput[i + 5]
+- setter function (setUserInput) will update the userInput withblaWord
+-  
 
 As a user, I see a third robot that modifies the input as per the developer's choice in real time.
 
